@@ -5,8 +5,7 @@ module fulladder (
 	input b,
 	input cin,
 	output s,
-	output count
-	);
+	output count);
 
 	assign s = a^b^cin;
 	assign count = a & b | a & cin | b & cin;
